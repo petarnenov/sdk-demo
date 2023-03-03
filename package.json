@@ -8,6 +8,16 @@
   "files": [
     "dist"
   ],
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true,
+    "minify": true,
+    "dts-resolve": true
+  },
   "scripts": {
     "build:tsup": "rm -rf dist && tsup index.ts",
     "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-source-maps",
