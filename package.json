@@ -9,7 +9,6 @@
     "dist"
   ],
   "scripts": {
-    "build:tsup": "rm -rf dist && tsup ./index.ts",
     "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-source-maps",
     "lint": "eslint 'src/**/*.ts'",
     "lint:fix": "eslint --fix 'src/**/*.ts'",
@@ -31,8 +30,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
     "husky": "^8.0.3",
-    "microbundle": "^0.15.1",
-    "tsup": "^6.6.3"
+    "microbundle": "^0.15.1"
   },
   "repository": {
     "type": "git",

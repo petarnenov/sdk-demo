@@ -14,6 +14,6 @@ post.getPosts().then((posts) => {
 });
 
 // Path: src/index.test.js
-export default {
+module.exports = {
   helloWorld,
 };
