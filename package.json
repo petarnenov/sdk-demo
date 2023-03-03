@@ -5,7 +5,8 @@
   "scripts": {
     "release": "semantic-release",
     "lint": "eslint src/**/*.js",
-    "commitlint": "commitlint --from=HEAD~1"
+    "commitlint": "commitlint --from=HEAD~1",
+    "ver": "npm version patch"
   },
   "keywords": [],
   "author": "petarnenovpetrov@gmail.com",
