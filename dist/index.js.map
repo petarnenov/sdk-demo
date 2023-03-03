@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":["../src/index.js"],"sourcesContent":["const helloWorld = () => {\n  console.log('Hello World');\n};\n\n// Path: src/index.test.js\nmodule.exports = {\n  helloWorld,\n};\n"],"names":["module","exports","helloWorld","console","log"],"mappings":"AAKAA,OAAOC,QAAU,CACfC,WANiB,WACjBC,QAAQC,IAAI,cACd"}
+{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
