@@ -12,14 +12,22 @@
     "entry": [
       "src/index.ts"
     ],
-    "splitting": false,
+    "splitting": true,
     "sourcemap": true,
     "clean": true,
     "minify": true,
-    "dts-resolve": true
+    "dts-resolve": true,
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "external": [
+      "dotenv"
+    ],
+    "target": "es2017"
   },
   "scripts": {
-    "build:tsup": "rm -rf dist && tsup index.ts",
+    "build:tsup": "rm -rf dist && tsup index.ts && tsc --emitDeclarationOnly --declaration",
     "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-source-maps",
     "lint": "eslint 'src/**/*.ts'",
     "lint:fix": "eslint --fix 'src/**/*.ts'",
