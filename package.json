@@ -5,9 +5,13 @@
   "module": "dist/index.m.js",
   "unpkg": "dist/index.umd.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-source-maps",
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint 'src/**/*.ts'",
+    "lint:fix": "eslint --fix 'src/**/*.ts'",
     "commitlint": "commitlint --from=HEAD~1",
     "ver": "npm version patch"
   },
