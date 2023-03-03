@@ -5,8 +5,7 @@
   "scripts": {
     "release": "semantic-release",
     "lint": "eslint src/**/*.js",
-    "commitlint": "commitlint --from=HEAD~1",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commitlint": "commitlint --from=HEAD~1"
   },
   "keywords": [],
   "author": "petarnenovpetrov@gmail.com",
@@ -20,8 +19,7 @@
     "eslint": "^8.35.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
-    "husky": "^8.0.3",
-    "semantic-release": "^20.1.1"
+    "husky": "^8.0.3"
   },
   "repository": {
     "type": "git",
